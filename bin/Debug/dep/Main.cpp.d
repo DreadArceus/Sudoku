@@ -103,7 +103,8 @@ bin/Debug/obj/Main.cpp.o: \
   /usr/local/include/SFML/System/Clock.hpp \
   /usr/local/include/SFML/Config.hpp /usr/local/include/SFML/System.hpp \
   /usr/local/include/SFML/Audio.hpp \
-  /Users/dreadarceus/github/Chess_2P/src/PCH.hpp src/Main.cpp
+  /Users/dreadarceus/github/Chess_2P/src/PCH.hpp src/Main.cpp \
+  src/Game.hpp
 
 /Users/dreadarceus/github/Chess_2P/src/Utility/FileSystem.hpp:
 
@@ -316,3 +317,5 @@ bin/Debug/obj/Main.cpp.o: \
 /Users/dreadarceus/github/Chess_2P/src/PCH.hpp:
 
 src/Main.cpp:
+
+src/Game.hpp:
