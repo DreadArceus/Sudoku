@@ -104,7 +104,7 @@ bin/Release/obj/Game.cpp.o: \
   /usr/local/include/SFML/Config.hpp /usr/local/include/SFML/System.hpp \
   /usr/local/include/SFML/Audio.hpp \
   /Users/dreadarceus/github/Chess_2P/src/PCH.hpp src/Game.cpp \
-  src/Game.hpp
+  src/Game.hpp src/Solver.hpp
 
 /Users/dreadarceus/github/Chess_2P/src/Utility/FileSystem.hpp:
 
@@ -319,3 +319,5 @@ bin/Release/obj/Game.cpp.o: \
 src/Game.cpp:
 
 src/Game.hpp:
+
+src/Solver.hpp:

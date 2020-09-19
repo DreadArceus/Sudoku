@@ -10,6 +10,7 @@ public:
 	Board(vector<sf::Sprite> nums);
 	void makeMaster();
 	void makeGrid();
+	bool solvable();
 	void move(int num);
 	void select(int x, int y);
 	bool blacklistCheck(int x, int y);

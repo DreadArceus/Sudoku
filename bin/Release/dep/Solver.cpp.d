@@ -1,4 +1,4 @@
-bin/Debug/obj/Game.cpp.o: \
+bin/Release/obj/Solver.cpp.o: \
   /Users/dreadarceus/github/Chess_2P/src/Utility/Types.hpp \
   /Users/dreadarceus/github/Chess_2P/src/Utility/FileSystem.hpp \
   /usr/local/include/SFML/Network/UdpSocket.hpp \
@@ -103,8 +103,8 @@ bin/Debug/obj/Game.cpp.o: \
   /usr/local/include/SFML/System/Clock.hpp \
   /usr/local/include/SFML/Config.hpp /usr/local/include/SFML/System.hpp \
   /usr/local/include/SFML/Audio.hpp \
-  /Users/dreadarceus/github/Chess_2P/src/PCH.hpp src/Game.cpp \
-  src/Game.hpp src/Solver.hpp
+  /Users/dreadarceus/github/Chess_2P/src/PCH.hpp src/Solver.cpp \
+  src/Solver.hpp
 
 /Users/dreadarceus/github/Chess_2P/src/Utility/FileSystem.hpp:
 
@@ -316,8 +316,6 @@ bin/Debug/obj/Game.cpp.o: \
 
 /Users/dreadarceus/github/Chess_2P/src/PCH.hpp:
 
-src/Game.cpp:
-
-src/Game.hpp:
+src/Solver.cpp:
 
 src/Solver.hpp:

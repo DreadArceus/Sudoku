@@ -1,4 +1,5 @@
 #include "Game.hpp"
+#include "Solver.hpp"
 #include <ctime>
 #include <random>
 using namespace std;
@@ -18,8 +19,11 @@ Board::Board(vector<sf::Sprite> nums)
 		set<int> st;
 		validators.push_back(st);
 	}
-	makeMaster();
-	makeGrid();
+	do
+	{
+		makeMaster();
+		makeGrid();
+	} while (!solvable());
 }
 
 void Board::makeMaster()
@@ -109,7 +113,7 @@ void Board::makeMaster()
 
 void Board::makeGrid()
 {
-	for(int i = 0; i < 46; i++)
+	for(int i = 0; i < 40; i++)
 	{
 		int x = rand() % 9, y = rand() % 9;
 		while(grid[x][y] != -1)
@@ -120,6 +124,12 @@ void Board::makeGrid()
 		blacklist.insert({x, y});
 		grid[x][y] = masterGrid[x][y];
 	}
+}
+
+bool Board::solvable()
+{
+	Solver sl(grid);
+	return masterGrid == sl.getSolution();
 }
 
 void Board::move(int num)
