@@ -206,13 +206,13 @@ int main()
 			{
 				current.setPosition(0, cy);
 			}
-			else if(cy < 0)
+			if(cy < 0)
 			{
-				current.setPosition(cx, 0);
+				current.setPosition(current.getPosition().x, 0);
 			}
 			else if(cy > (x+y)*8)
 			{
-				current.setPosition(cx, (x+y)*8);
+				current.setPosition(current.getPosition().x, (x+y)*8);
 			}
 			rw.draw(current);
 			//Bringing the number to the foreground
